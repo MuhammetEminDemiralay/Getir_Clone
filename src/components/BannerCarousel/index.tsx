@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Dimensions, FlatList, Image } from 'react-native'
 
-function index() {
+function Index() {
 
     const { width, height } = Dimensions.get('window')
     const [banners, setBanners] = useState<string[]>([
@@ -32,4 +32,4 @@ function index() {
     )
 }
 
-export default index
+export default Index

@@ -6,7 +6,7 @@ type categoryItemProps = {
     item : Category
 }
 
-function index(item : categoryItemProps) {
+function Index(item : categoryItemProps) {
     const {width, height} = Dimensions.get("window");
     return (
         <TouchableOpacity style={{width : width * 0.25, height : width * 0.25, alignItems : 'center', justifyContent : 'center', marginTop : 8}}>
@@ -18,4 +18,4 @@ function index(item : categoryItemProps) {
     )
 }
 
-export default index
+export default Index

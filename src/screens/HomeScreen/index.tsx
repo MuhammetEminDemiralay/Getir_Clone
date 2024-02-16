@@ -4,7 +4,7 @@ import HeaderMain from '../../components/HeaderMain'
 import BannerCarousel from '../../components/BannerCarousel'
 import MainCategories from '../../components/MainCategories'
 
-function index() {
+function Index() {
     return (
         <ScrollView stickyHeaderIndices={[0]}>
             <HeaderMain/>
@@ -14,4 +14,4 @@ function index() {
     )
 }
 
-export default index
+export default Index

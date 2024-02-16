@@ -4,7 +4,7 @@ import "./styles"
 import styles from './styles'
 import { Entypo } from '@expo/vector-icons';
 
-function index() {
+function Index() {
     return (
         <View style={styles.headerMain}>
             <View style={styles.headerOne}>
@@ -23,4 +23,4 @@ function index() {
     )
 }
 
-export default index
+export default Index

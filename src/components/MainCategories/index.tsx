@@ -5,7 +5,7 @@ import categoriesGetir from '../../../assets/categoriesGetir'
 import CategoryItem from '../CategoryItem'
 
 
-function index() {
+function Index() {
 
     const [categories, setCategories] = useState<Category[]>(categoriesGetir)
 
@@ -23,7 +23,7 @@ function index() {
     )
 }
 
-export default index
+export default Index
 
 const styles = StyleSheet.create({
     listCategoryies : {
