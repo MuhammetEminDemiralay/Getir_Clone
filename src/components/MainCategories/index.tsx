@@ -4,11 +4,9 @@ import { Category } from '../../models/index'
 import categoriesGetir from '../../../assets/categoriesGetir'
 import CategoryItem from '../CategoryItem'
 
-
 function Index() {
 
     const [categories, setCategories] = useState<Category[]>(categoriesGetir)
-
 
     return (
         <View>
