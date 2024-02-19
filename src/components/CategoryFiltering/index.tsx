@@ -5,9 +5,11 @@ import categoriesGetir from '../../../assets/categoriesGetir'
 import { Category } from '../../models'
 
 const { width, height } = Dimensions.get('window')
-const CategoryBox = ({ item, active}: { item: Category, active : Category }) => {
+const CategoryBox = ({ item, active}: { item: Category, active : any }) => {
+     
+    
     return (
-        <View style={[{flex : 1, paddingHorizontal : 10, flexDirection : 'row', alignItems : 'center'}, item.name == active.name && { backgroundColor : 'red'}]}>
+        <View style={[{flex : 1, paddingHorizontal : 10, flexDirection : 'row', alignItems : 'center'}, item.name == active && { borderBottomWidth : 3.5, borderColor : "#ffef00"}]}>
             <Text style={{ fontSize: 14, fontWeight: '600', color: '#fff' }}>
                 {item.name}
             </Text>
@@ -15,7 +17,11 @@ const CategoryBox = ({ item, active}: { item: Category, active : Category }) => 
     )
 }
 function Index({category} : {category : Category}) {
+
+    console.log(category);
+    
     const [categories, setCategories] = useState<Category[]>(categoriesGetir)
+    
     return (
         <ScrollView
             showsHorizontalScrollIndicator={false}

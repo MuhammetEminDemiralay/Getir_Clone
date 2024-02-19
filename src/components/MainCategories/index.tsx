@@ -24,10 +24,10 @@ function Index() {
 export default Index
 
 const styles = StyleSheet.create({
-    listCategoryies : {
-        flex : 1,
-        flexDirection : 'row',
-        alignItems : 'flex-start',
-        flexWrap : 'wrap'
+    listCategoryies: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        flexWrap: 'wrap'
     }
 })
