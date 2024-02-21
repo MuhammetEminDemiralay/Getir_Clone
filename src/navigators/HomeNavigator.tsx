@@ -3,14 +3,14 @@ import { createStackNavigator } from '@react-navigation/stack'
 import HomeScreen from '../screens/HomeScreen'
 import { Image, Text, TouchableOpacity } from 'react-native';
 import CategoryFilterScreen from '../screens/CategoryFilterScreen'
-import ProductDetailsScreen from '../screens/ProductDetailsScreen'
+import ProductDetailsScreen from '../screens/ProductDetailsScreen/Index'
 import { Ionicons } from '@expo/vector-icons';
 import { getFocusedRouteNameFromRoute, useNavigation } from '@react-navigation/native';
 import { AntDesign } from '@expo/vector-icons';
 
 const Stack = createStackNavigator();
 const tabHiddenRoutes = ["ProductDetails"];
-function MyStack({navigation, route}) {
+function MyStack({navigation, route} : {navigation : any, route : any}) {
   React.useLayoutEffect(() => {
     const routeName = getFocusedRouteNameFromRoute(route);
     // console.log("Route Name is ", routeName);
