@@ -29,7 +29,7 @@ function Index({ images }: { images: string[] }) {
                 )}
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                snapToInterval={width}
+                snapToInterval={width * 0.5}
                 decelerationRate={'fast'}
                 viewabilityConfig={viewConfigRef.current}
                 onViewableItemsChanged={onViewRef.current}
