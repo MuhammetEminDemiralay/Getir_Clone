@@ -1,0 +1,17 @@
+import React from 'react'
+import { View, Text, FlatList } from 'react-native'
+import productsGetir from '../../../assets/productsGetir'
+import CartItem from '../../components/CartItem/Index'
+
+function Index() {
+
+
+    return (
+        <FlatList
+            data={productsGetir.slice(0,1)}
+            renderItem={({ item }) => <CartItem product={item}/>}
+        />
+    )
+}
+
+export default Index
