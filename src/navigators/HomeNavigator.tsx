@@ -14,7 +14,7 @@ import { Feather } from '@expo/vector-icons';
 const { width, height } = Dimensions.get("window");
 
 const Stack = createStackNavigator();
-const tabHiddenRoutes = ["ProductDetails"];
+const tabHiddenRoutes = ["ProductDetails", "CartScreen"];
 function MyStack({ navigation, route }: { navigation: any, route: any }) {
   React.useLayoutEffect(() => {
     const routeName = getFocusedRouteNameFromRoute(route);
